@@ -29,7 +29,7 @@ public class Group {
 	}
 
 	public String name() {
-		return "";
+		return String.format("%s%d-%d", orientation, number, quarter);
 	}
 
 	public int studentCount() {
