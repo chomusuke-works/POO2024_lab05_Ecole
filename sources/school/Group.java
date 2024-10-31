@@ -37,6 +37,6 @@ public class Group {
 	}
 
 	public void defineLessons(Object ... args) {
-
+		lessons.addAll(Arrays.asList(args));
 	}
 }
