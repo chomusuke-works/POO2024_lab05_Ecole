@@ -1,6 +1,6 @@
 package school;
 
-import school.people.Professeur;
+import school.people.Teacher;
 
 public class Lesson {
 	private final String subject;
@@ -9,9 +9,9 @@ public class Lesson {
 	private final int duration;
 	private final String classroom;
 
-	private final Professeur professeur;
+	private final Teacher professeur;
 
-	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom, Professeur professeur) {
+	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom, Teacher professeur) {
 		this.subject = subject;
 		this.weekDay = weekDay;
 		this.startPeriod = startPeriod;

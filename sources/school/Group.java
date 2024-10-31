@@ -1,6 +1,6 @@
 package school;
 
-import school.people.Etudiant;
+import school.people.Student;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,10 +10,10 @@ public class Group {
 	private final int number;
 	private final String orientation;
 	private final int quarter;
-	private final List<Etudiant> students = new ArrayList<>();
+	private final List<Student> students = new ArrayList<>();
 	private final List<Object> lessons = new ArrayList<>();
 
-	public Group(int number, String orientation, int quarter, Etudiant ... students) {
+	public Group(int number, String orientation, int quarter, Student... students) {
 		if (students.length < 1) {
 			throw new IllegalArgumentException("A group must have at least one student");
 		}
@@ -24,15 +24,15 @@ public class Group {
 		this.students.addAll(Arrays.asList(students));
 	}
 
-	public String horaire() {
+	public String schedule() {
 		return "";
 	}
 
-	public String nom() {
+	public String name() {
 		return "";
 	}
 
-	public int nombreEtudiants() {
+	public int studentCount() {
 		return students.size();
 	}
 
