@@ -21,7 +21,7 @@ public class Lesson {
 		this.professeur = professeur;
 	}
 
-	public static String schedule() {
+	public static String schedule(Lesson ... lessons) {
 		return "";
 	}
 }
