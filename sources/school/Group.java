@@ -36,7 +36,7 @@ public class Group {
 		return students.size();
 	}
 
-	public void defineLessons(Object ... args) {
+	public void defineLessons(Lesson ... args) {
 		lessons.addAll(Arrays.asList(args));
 	}
 }
