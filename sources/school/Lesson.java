@@ -2,6 +2,8 @@ package school;
 
 import school.people.Professeur;
 
+import java.util.List;
+
 public class Lesson {
 	private final String subject;
 	private final int weekDay;
@@ -23,5 +25,15 @@ public class Lesson {
 
 	public String schedule() {
 		return "";
+	}
+
+	public static Lesson getLessonAt(List<Lesson> lessons, int weekDay, int period) {
+		for (Lesson lesson : lessons) {
+			if (lesson.weekDay == weekDay && lesson.startPeriod <= period && lesson.startPeriod + lesson.duration - 1 >= period) {
+				return lesson;
+			}
+		}
+
+		return null;
 	}
 }

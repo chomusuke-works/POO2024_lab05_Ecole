@@ -1,10 +1,10 @@
 package school.people;
 
 public class Personne {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
-    Personne(String firstName, String lastName) {
+    public Personne(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }

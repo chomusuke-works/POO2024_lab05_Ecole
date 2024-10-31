@@ -1,9 +1,12 @@
 package school.people;
 
-public class Etudiant extends Personne {
-    private int matricule;
+import school.Group;
 
-    Etudiant(String firstName, String lastName, int matricule) {
+public class Etudiant extends Personne {
+    private final int matricule;
+    private Group group;
+
+    public Etudiant(String firstName, String lastName, int matricule) {
         super(firstName, lastName);
 
         this.matricule = matricule;

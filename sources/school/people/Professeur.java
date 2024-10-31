@@ -1,9 +1,9 @@
 package school.people;
 
 public class Professeur extends Personne {
-    private String abreviation;
+    private final String abreviation;
 
-    Professeur(String firstName, String lastName, String abreviation) {
+    public Professeur(String firstName, String lastName, String abreviation) {
         super(firstName, lastName);
 
         this.abreviation = abreviation;
