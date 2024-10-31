@@ -1,4 +1,6 @@
-import people.Etudiant;
+package school;
+
+import school.people.Etudiant;
 
 import java.util.ArrayList;
 import java.util.Arrays;

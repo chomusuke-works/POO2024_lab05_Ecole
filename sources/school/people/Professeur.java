@@ -1,4 +1,4 @@
-package people;
+package school.people;
 
 public class Professeur extends Personne {
     private String abreviation;

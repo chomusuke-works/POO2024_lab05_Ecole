@@ -1,4 +1,6 @@
-import people.Professeur;
+package school;
+
+import school.people.Professeur;
 
 public class Lesson {
 	private final String subject;
