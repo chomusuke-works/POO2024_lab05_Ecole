@@ -2,8 +2,10 @@ package school;
 
 import school.people.Student;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Group {
@@ -11,7 +13,7 @@ public class Group {
 	private final String orientation;
 	private final int quarter;
 	private final List<Student> students = new ArrayList<>();
-	private final List<Object> lessons = new ArrayList<>();
+	private Lesson[] lessons;
 
 	public Group(int number, String orientation, int quarter, Student... students) {
 		if (students.length < 1) {
@@ -25,7 +27,7 @@ public class Group {
 	}
 
 	public String schedule() {
-		return "";
+		return Lesson.schedule(lessons);
 	}
 
 	public String name() {
@@ -37,6 +39,6 @@ public class Group {
 	}
 
 	public void defineLessons(Lesson ... args) {
-		lessons.addAll(Arrays.asList(args));
+		lessons = Arrays.copyOf(args, args.length);
 	}
 }
