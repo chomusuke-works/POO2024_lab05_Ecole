@@ -13,6 +13,6 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("%s (#%d) - %s", super.toString(), this.number, this.group.name());
     }
 }
