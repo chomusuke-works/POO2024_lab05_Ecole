@@ -10,6 +10,10 @@ public class Lesson {
 	private final Teacher professeur;
 
 	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom, Teacher professeur) {
+		if (professeur == null) {
+			throw new NullPointerException("Professeur is null");
+		}
+
 		this.subject = subject;
 		this.weekDay = weekDay;
 		this.startPeriod = startPeriod;
@@ -17,6 +21,8 @@ public class Lesson {
 		this.classroom = classroom;
 
 		this.professeur = professeur;
+
+		professeur.lessons.add(this);  // The teacher now has a reference to this course
 	}
 
 	public static String schedule(Lesson ... lessons) {
