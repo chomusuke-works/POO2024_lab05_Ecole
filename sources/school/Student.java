@@ -1,8 +1,8 @@
 package school;
 
 public class Student extends Person {
-    private int number;
-    private Group group;
+    private final int number;
+    private final Group group;
 
     Student(String firstName, String lastName, int number, Group group) {
         super(firstName, lastName);

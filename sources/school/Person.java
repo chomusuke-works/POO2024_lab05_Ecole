@@ -1,8 +1,8 @@
 package school;
 
 public abstract class Person {
-    private String firstName;
-    private String lastName;
+    private final String firstName;
+    private final String lastName;
 
     Person(String firstName, String lastName) {
         this.firstName = firstName;
