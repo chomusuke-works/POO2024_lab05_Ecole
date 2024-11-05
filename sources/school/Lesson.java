@@ -22,7 +22,7 @@ public class Lesson {
 
 		this.professeur = professeur;
 
-		professeur.lessons.add(this);  // The teacher now has a reference to this course
+		professeur.addLesson(this);
 	}
 
 	public static String schedule(Lesson ... lessons) {
