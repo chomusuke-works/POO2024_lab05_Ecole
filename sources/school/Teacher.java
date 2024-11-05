@@ -21,7 +21,7 @@ public class Teacher extends Person {
 
     @Override
     public String toString() {
-        return super.toString();
+        return String.format("%s (%s)", super.toString(), this.abbreviation);
     }
 
     public String schedule() {
