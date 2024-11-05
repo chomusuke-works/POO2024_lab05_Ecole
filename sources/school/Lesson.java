@@ -10,9 +10,6 @@ public class Lesson {
 	private final Teacher professeur;
 
 	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom, Teacher professeur) {
-		if (professeur == null) {
-			throw new NullPointerException("Professeur is null");
-		}
 
 		this.subject = subject;
 		this.weekDay = weekDay;
