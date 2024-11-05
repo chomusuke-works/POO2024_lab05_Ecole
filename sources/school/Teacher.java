@@ -1,8 +1,6 @@
 package school;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class Teacher extends Person {
     private final String abbreviation;
