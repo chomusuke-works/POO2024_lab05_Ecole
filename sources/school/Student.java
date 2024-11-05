@@ -1,4 +1,4 @@
-package school.people;
+package school;
 
 public class Student extends Person {
     private int number;
