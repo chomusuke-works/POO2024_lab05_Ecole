@@ -2,13 +2,20 @@ package school;
 
 public class Student extends Person {
     private final int number;
-    private final Group group;
+    Group group;
 
-    Student(String firstName, String lastName, int number, Group group) {
+    public Student(String firstName, String lastName, int number, Group group) {
         super(firstName, lastName);
 
         this.number = number;
         this.group = group;
+    }
+
+    public Student(String firstName, String lastName, int number) {
+        super(firstName, lastName);
+
+        this.number = number;
+        this.group = null;
     }
 
     @Override
