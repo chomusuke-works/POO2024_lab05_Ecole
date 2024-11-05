@@ -36,4 +36,9 @@ public class Teacher extends Person {
         lessons[lessonCount] = lesson;
         ++lessonCount;
     }
+
+    @Override
+    protected String getJob() {
+        return "Prof.";
+    }
 }

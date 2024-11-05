@@ -12,6 +12,11 @@ public class Student extends Person {
     }
 
     @Override
+    protected String getJob() {
+        return "Etud.";
+    }
+
+    @Override
     public String toString() {
         return String.format("%s (#%d) - %s", super.toString(), this.number, this.group.name());
     }

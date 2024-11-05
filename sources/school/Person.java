@@ -1,6 +1,6 @@
 package school;
 
-public class Person {
+public abstract class Person {
     private String firstName;
     private String lastName;
 
@@ -9,9 +9,7 @@ public class Person {
         this.lastName = lastName;
     }
 
-    private String getJob() {
-        return "Pers.";
-    }
+    protected abstract String getJob();
 
     @Override
     public String toString() {
