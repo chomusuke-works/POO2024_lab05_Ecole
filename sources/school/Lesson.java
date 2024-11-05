@@ -1,7 +1,5 @@
 package school;
 
-import school.people.Teacher;
-
 public class Lesson {
 	private final String subject;
 	private final int weekDay;
