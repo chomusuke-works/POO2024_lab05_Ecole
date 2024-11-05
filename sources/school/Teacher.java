@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Teacher extends Person {
     private String abbreviation;
-    final List<Lesson> lessons = new ArrayList<>();  // Package visibility -> modified when creating lessons taught by this teacher
+    final List<Lesson> lessons = new ArrayList<>();  // Package-private
 
     Teacher(String firstName, String lastName, String abbreviation) {
         super(firstName, lastName);
