@@ -7,7 +7,7 @@ public class Teacher extends Person {
     private Lesson[] lessons;
     private int lessonCount;
 
-    Teacher(String firstName, String lastName, String abbreviation) {
+    public Teacher(String firstName, String lastName, String abbreviation) {
         super(firstName, lastName);
         lessonCount = 0;
         lessons = new Lesson[2];
