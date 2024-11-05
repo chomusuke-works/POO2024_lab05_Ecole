@@ -19,6 +19,16 @@ public class Group {
 		this.number = number;
 		this.orientation = orientation;
 		this.quarter = quarter;
+
+		for (Student student : students) {
+			if (student.group != null) {
+				throw new RuntimeException("The student " + student + " already has a group.");
+			}
+
+			this.students.add(student);
+			student.group = this;
+		}
+
 		this.students.addAll(Arrays.asList(students));
 	}
 
