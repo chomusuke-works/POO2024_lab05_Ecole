@@ -9,8 +9,12 @@ public class Person {
         this.lastName = lastName;
     }
 
+    private String getJob() {
+        return "Pers.";
+    }
+
     @Override
     public String toString() {
-        return "";
+        return String.format("%s %s %s", getJob(), firstName, lastName);
     }
 }
