@@ -46,5 +46,8 @@ public class Main {
 
 		System.out.println("\n-- Horaire du groupe IL6-1 (4 etudiants)");
 		System.out.println(il61.schedule());
+
+		System.out.println("\n-- Horaire du Prof. Pier Donini (PDO)");
+		System.out.println(pdo.schedule());
 	}
 }
