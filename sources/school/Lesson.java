@@ -9,7 +9,7 @@ public class Lesson {
 	private final int duration;
 	private final String classroom;
 
-	private final Teacher professeur;
+	private final Teacher teacher;
 
 	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom, Teacher professeur) {
 
@@ -19,7 +19,7 @@ public class Lesson {
 		this.duration = duration;
 		this.classroom = classroom;
 
-		this.professeur = professeur;
+		this.teacher = professeur;
 
 		if (professeur != null) {
 			professeur.addLesson(this);
@@ -149,10 +149,10 @@ public class Lesson {
 			subject = lesson.subject;
 			classroom = lesson.classroom;
 
-			if (lesson.professeur == null) {
+			if (lesson.teacher == null) {
 				teacher = "";
 			} else {
-				teacher = lesson.professeur.getAbbreviation();
+				teacher = lesson.teacher.getAbbreviation();
 			}
 		}
 
