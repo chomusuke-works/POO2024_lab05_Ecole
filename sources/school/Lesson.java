@@ -26,6 +26,10 @@ public class Lesson {
 		}
 	}
 
+	public Lesson(String subject, int weekDay, int startPeriod, int duration, String classroom) {
+		this(subject, weekDay, startPeriod, duration, classroom, null);
+	}
+
 	public static String schedule(Lesson ... lessons) {
 		final String timeWhitespace = " ".repeat(5);
 		final String rowSeparator = "-".repeat(13);

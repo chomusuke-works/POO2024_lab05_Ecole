@@ -12,7 +12,7 @@ public class Main {
 		Lesson poo3 = new Lesson("POO", 3, 7, 2, "G01", pdo);
 		Lesson sye1 = new Lesson("SYE", 1, 5, 2, "B23", dre);
 		Lesson sye2 = new Lesson("SYE", 1, 7, 2, "B23", dre);
-		Lesson tic = new Lesson("TIC", 1, 9, 2, "F06", null);
+		Lesson tic = new Lesson("TIC", 1, 9, 2, "F06");
 
 		Student johnLennon = new Student("John", "Lennon", 1234);
 		Student paulMcCartney = new Student("Paul", "McCartney", 2341);
