@@ -85,10 +85,9 @@ public class Lesson {
 				dayStringColumn.add(periodText(lesson));
 				for (int i = 0; i < 2*(lesson.duration-1); ++i) {
 					dayStringColumn.add(periodText(null));
-					if (i % 2 == 0) {
-						++nextTreatedPeriod[dayIdx];
-					}
 				}
+
+				nextTreatedPeriod[dayIdx] = lesson.startPeriod + lesson.duration;
 
 				dayStringColumn.add(rowSeparator);
 			}
@@ -111,6 +110,8 @@ public class Lesson {
 			}
 			schedule.append('\n');
 		}
+
+		schedule.deleteCharAt(schedule.length()-1);
 
 		return schedule.toString();
 	}
