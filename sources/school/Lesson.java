@@ -105,9 +105,9 @@ public class Lesson {
 		StringBuilder schedule = new StringBuilder();
 
 		for (int i = 0; i < periodTimesColumn.size(); ++i) {
-			schedule.append(periodTimesColumn.get(i) + '|');
+			schedule.append(periodTimesColumn.get(i)).append('|');
 			for (List<String> row : scheduleColumns) {
-				schedule.append(row.get(i) + '|');
+				schedule.append(row.get(i)).append('|');
 			}
 			schedule.append('\n');
 		}
