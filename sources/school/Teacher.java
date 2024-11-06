@@ -10,7 +10,7 @@ public class Teacher extends Person {
     public Teacher(String firstName, String lastName, String abbreviation) {
         super(firstName, lastName);
         lessonCount = 0;
-        lessons = new Lesson[2];
+        lessons = new Lesson[0];
 
         this.abbreviation = abbreviation;
     }
@@ -30,7 +30,7 @@ public class Teacher extends Person {
 
     void addLesson(Lesson lesson) {
         if (lessonCount == lessons.length) {
-            lessons = Arrays.copyOf(lessons, lessons.length * 2);
+            lessons = Arrays.copyOf(lessons, lessons.length + 1);
         }
 
         lessons[lessonCount] = lesson;
