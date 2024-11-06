@@ -12,10 +12,7 @@ public class Student extends Person {
     }
 
     public Student(String firstName, String lastName, int number) {
-        super(firstName, lastName);
-
-        this.number = number;
-        this.group = null;
+        this(firstName, lastName, number, null);
     }
 
     @Override
